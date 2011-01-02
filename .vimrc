@@ -108,3 +108,7 @@ map <silent> <F8> :Tlist<CR>
 :retab                " Change all the existing tab characters to match the current tab settings
 
 set scrolloff=999
+
+if has("autocmd")
+    au  BufNewFile,BufRead *.mustache set syntax=mustache
+endif
