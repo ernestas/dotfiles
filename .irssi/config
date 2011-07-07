@@ -13,12 +13,15 @@ servers = (
 chatnets = {
   FreeNode = {
     type = "IRC";
-    autosendcmd = "/^msg NickServ identify passwordgoeshere;wait 2000"; #dotfiles: change freenode.org password
+    autosendcmd = "/^msg NickServ identify ***;wait 2000"; #dotfiles: change freenode.org password
   };
 };
 
 channels = (
-  { name = "#kohana"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#kohana"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#kohana-elite"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#sicp"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#facebook"; chatnet = "FreeNode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -194,11 +197,14 @@ settings = {
     real_name = "Ernestas";
     user_name = "ernestas";
     nick = "ernestas";
+    log_timestamp = "%Y-%b-%d %H:%M:%S";
+    timestamp_format = "%H:%M:%S  ";
   };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "simplicity"; };
+  "fe-common/core" = { theme = "simplicity"; autolog = "yes"; };
   "perl/core/scripts" = {
     crapbuster_levels = "CRAP CTCPS JOINS PARTS QUITS KICKS TOPICS SNOTES NOTICES MODES DCC NICKS ACTIONS DCCMSGS CLIENTNOTICE CLIENTCRAP CLIENTERROR";
+    screen_away_message = "faaaaaaaaaaaaaaar away";
   };
 };
 hilights = (
