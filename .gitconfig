@@ -25,3 +25,6 @@
     added = yellow
     changed = green bold
     untracked = blue bold
+
+[alias]
+	ln = log -n 30 --pretty=format:%h' '%Cblue%cr%Creset%Cgreen%d%Creset' '%s --graph --color --decorate
