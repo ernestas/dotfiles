@@ -93,7 +93,7 @@ colorscheme symfony
 "---------------------------------------------------
 " Tags file (use ctags)
 let Tlist_Use_Right_Window = 1    " tags list on right window
-:set tags=.vimtags
+set tags=tags;/
 map <silent> <F8> :Tlist<CR>
 
 "---------------------------------------------------
