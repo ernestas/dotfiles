@@ -110,3 +110,6 @@ set scrolloff=999
 if has("autocmd")
     au  BufNewFile,BufRead *.mustache set syntax=mustache
 endif
+
+set foldmethod=indent
+set foldlevel=1
