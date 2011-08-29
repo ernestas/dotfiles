@@ -3,6 +3,8 @@
 	email = ernestas.lisauskas@gmail.com
 [core]
 	editor = vim
+	autocrlf = true
+	safecrlf = false
 [github]
 	user = ernestas
 	token = tokengoeshere #dotfiles change token
