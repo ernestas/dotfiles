@@ -111,5 +111,7 @@ if has("autocmd")
     au  BufNewFile,BufRead *.mustache set syntax=mustache
 endif
 
+au BufRead,BufNewFile *.pp   setfiletype puppet
+
 set foldmethod=indent
 set foldlevel=1
