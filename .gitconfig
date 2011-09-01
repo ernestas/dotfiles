@@ -3,7 +3,7 @@
 	email = ernestas.lisauskas@gmail.com
 [core]
 	editor = vim
-	autocrlf = true
+	autocrlf = input
 	safecrlf = false
 [github]
 	user = ernestas
