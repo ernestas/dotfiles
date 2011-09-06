@@ -113,5 +113,10 @@ endif
 
 au BufRead,BufNewFile *.pp   setfiletype puppet
 
+augroup vagrant
+	au!
+	au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
+
 set foldmethod=indent
 set foldlevel=1
