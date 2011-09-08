@@ -113,6 +113,9 @@ endif
 
 au BufRead,BufNewFile *.pp   setfiletype puppet
 
+au Bufread,BufNewFile *.feature set filetype=gherkin
+au! Syntax gherkin source ~/.vim/syntax/cucumber.vim
+
 augroup vagrant
 	au!
 	au BufRead,BufNewFile Vagrantfile set filetype=ruby
