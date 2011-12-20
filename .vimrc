@@ -121,5 +121,8 @@ augroup vagrant
 	au BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
 
+au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
+
+
 set foldmethod=indent
 set foldlevel=1
