@@ -22,6 +22,8 @@ channels = (
   { name = "#kohana-elite"; chatnet = "FreeNode"; autojoin = "yes"; },
 
   { name = "#sicp"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#clojure"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#noir"; chatnet = "FreeNode"; autojoin = "yes"; },
 
   { name = "#behat"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#phpunit"; chatnet = "FreeNode"; autojoin = "yes"; },
@@ -31,6 +33,8 @@ channels = (
 
   { name = "#vagrant"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#puppet"; chatnet = "FreeNode"; autojoin = "yes"; }
+
+  { name = "#pagodabox"; chatnet = "FreeNode"; autojoin = "yes"; }
 );
 
 aliases = {
