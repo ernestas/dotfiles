@@ -6,7 +6,6 @@
 	autocrlf = input
 [github]
 	user = ernestas
-	token = tokengoeshere #dotfiles change token
 [color]
     ui = auto
 
