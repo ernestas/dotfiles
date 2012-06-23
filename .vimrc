@@ -92,9 +92,12 @@ colorscheme symfony
 
 "---------------------------------------------------
 " Tags file (use ctags)
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 let Tlist_Use_Right_Window = 1    " tags list on right window
 set tags=tags;/
 map <silent> <F8> :Tlist<CR>
+let tlist_php_settings = 'php;f:Functions'
+" let Tlist_Show_One_File = 1
 
 "---------------------------------------------------
 " Tab size
