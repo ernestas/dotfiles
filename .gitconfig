@@ -29,4 +29,4 @@
     untracked = blue bold
 
 [alias]
-	ln = log -n 30 --pretty=format:%h' '%Cblue%cr%Creset%Cgreen%d%Creset' '%s --graph --color --decorate
+	ln = log --pretty=format:%Cred%h%Creset' '%an' '%Cblue%cr%Creset%Cgreen%d%Creset' '%s --graph --color --decorate
