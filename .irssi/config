@@ -18,23 +18,19 @@ chatnets = {
 };
 
 channels = (
-  { name = "#kohana"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#gigpub"; chatnet = "FreeNode"; autojoin = "yes"; },
+
   { name = "#kohana-elite"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#kohana"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#behat"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#phpunit"; chatnet = "FreeNode"; autojoin = "yes"; },
 
   { name = "#sicp"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#clojure"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#noir"; chatnet = "FreeNode"; autojoin = "yes"; },
 
-  { name = "#behat"; chatnet = "FreeNode"; autojoin = "yes"; },
-  { name = "#phpunit"; chatnet = "FreeNode"; autojoin = "yes"; },
-
-  { name = "#statsd"; chatnet = "FreeNode"; autojoin = "yes"; },
-  { name = "#graphite"; chatnet = "FreeNode"; autojoin = "yes"; },
-
   { name = "#vagrant"; chatnet = "FreeNode"; autojoin = "yes"; },
-  { name = "#puppet"; chatnet = "FreeNode"; autojoin = "yes"; }
-
-  { name = "#pagodabox"; chatnet = "FreeNode"; autojoin = "yes"; }
+  { name = "#pagodabox"; chatnet = "FreeNode"; autojoin = "yes"; },
 );
 
 aliases = {
