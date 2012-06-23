@@ -126,6 +126,7 @@ augroup END
 
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
 
+au! BufRead,BufNewFile *.json set filetype=json
 
 set foldmethod=indent
 set foldlevel=1
