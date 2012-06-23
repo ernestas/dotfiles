@@ -4,7 +4,6 @@
 [core]
 	editor = vim
 	autocrlf = input
-	safecrlf = false
 [github]
 	user = ernestas
 	token = tokengoeshere #dotfiles change token
