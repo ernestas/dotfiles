@@ -211,8 +211,8 @@ statusbar = {
 settings = {
   core = {
     real_name = "Ernestas";
-    user_name = "ernestas";
-    nick = "ernestas";
+    user_name = "Ernestas";
+    nick = "Ernestas";
     log_timestamp = "%Y-%b-%d %H:%M:%S";
     timestamp_format = "%H:%M:%S  ";
   };
@@ -225,6 +225,8 @@ settings = {
 };
 hilights = (
   { text = "j987"; nick = "yes"; word = "yes"; },
-  { text = "ernestas"; nick = "yes"; word = "yes"; }
+  { text = "Ernestas"; nick = "yes"; word = "yes"; },
+  { text = "ernestas"; nick = "yes"; word = "yes"; },
+  { text = "ernest"; nick = "yes"; word = "yes"; }
 );
 logs = { };
