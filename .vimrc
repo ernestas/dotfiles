@@ -55,7 +55,7 @@ vnoremap <tab> %
 nnoremap ; :
 
 " tabs
-au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 tabstop=2 expandtab
 
 " folds
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
