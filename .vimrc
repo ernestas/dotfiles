@@ -3,16 +3,16 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" solarized
-set background=dark
-let g:solarized_termtrans = 1
-colorscheme solarized
-
 " not vi
 set nocompatible
 
 " for security
 set modelines=0
+
+" solarized
+set background=dark
+let g:solarized_termtrans = 1
+colorscheme solarized
 
 " text
 set encoding=utf-8
