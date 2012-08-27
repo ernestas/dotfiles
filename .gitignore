@@ -1,4 +1,6 @@
-*.swp
 .irssi/config.autosave
 .irssi/default.theme
 .irssi/saved_colors
+*.swp
+*.un~
+.vim/.netrwhist
