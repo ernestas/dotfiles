@@ -62,4 +62,5 @@ au BufNewFile,BufReadPost *.php,*.css,*scss setl shiftwidth=4 tabstop=4
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 au BufNewfile,BufReadPost *.php,*.css,*scss,*.pp setl foldmethod=indent
 
+au BufRead,BufNewFile Vagrantfile set filetype=ruby
 autocmd BufNewFile,BufRead monitrc.erb set filetype=monitrc
