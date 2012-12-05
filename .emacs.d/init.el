@@ -12,5 +12,6 @@
 
 (global-undo-tree-mode)
 (evil-mode 1)
+(tool-bar-mode -1)
 
 (load-theme 'solarized-dark t)
