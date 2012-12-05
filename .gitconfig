@@ -8,7 +8,7 @@
 [github]
 	user = ernestas
 [color]
-    ui = auto
+	ui = auto
 
 [alias]
 	ln = log --pretty=format:%Cred%h%Creset' '%an' '%Cblue%cr%Creset%Cgreen%d%Creset' '%s --graph --color --decorate
