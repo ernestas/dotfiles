@@ -5,10 +5,12 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(undo-tree evil clojure-mode nrepl))
+(defvar my-packages '(undo-tree evil color-theme-solarized clojure-mode nrepl))
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
 
 (global-undo-tree-mode)
 (evil-mode 1)
+
+(load-theme 'solarized-dark t)
