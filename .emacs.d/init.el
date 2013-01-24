@@ -3,6 +3,8 @@
 (scroll-bar-mode -1)
 (setq inhibit-startup-screen t)
 
+(setq-default indent-tabs-mode nil)
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
