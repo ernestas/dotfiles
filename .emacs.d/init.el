@@ -1,3 +1,7 @@
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -12,6 +16,5 @@
 
 (global-undo-tree-mode)
 (evil-mode 1)
-(tool-bar-mode -1)
 
 (load-theme 'solarized-dark t)
