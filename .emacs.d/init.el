@@ -12,7 +12,9 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(undo-tree evil color-theme-solarized clojure-mode nrepl))
+(defvar my-packages '(undo-tree evil color-theme-solarized
+                                clojure-mode nrepl
+                                magit))
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
@@ -21,6 +23,9 @@
 (evil-mode 1)
 
 (load-theme 'solarized-light t)
+
+(require 'magit)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 (require 'whitespace)
 (global-set-key (kbd "C-x w") 'whitespace-mode)
