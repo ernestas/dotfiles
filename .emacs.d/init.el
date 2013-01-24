@@ -20,4 +20,4 @@
 (global-undo-tree-mode)
 (evil-mode 1)
 
-(load-theme 'solarized-dark t)
+(load-theme 'solarized-light t)
