@@ -2,7 +2,7 @@
 	name = Ernestas Lisauskas
 	email = ernestas.lisauskas@gmail.com
 [core]
-	editor = vim
+	editor = emacs
 	autocrlf = input
 	pager = less -x4
 [github]
