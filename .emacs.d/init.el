@@ -21,3 +21,6 @@
 (evil-mode 1)
 
 (load-theme 'solarized-light t)
+
+(require 'whitespace)
+(global-set-key (kbd "C-x w") 'whitespace-mode)
