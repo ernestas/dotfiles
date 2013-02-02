@@ -18,24 +18,12 @@ chatnets = {
 };
 
 channels = (
-  {
-    name = "#gignite";
-    password = "****";
-    chatnet = "FreeNode";
-    autojoin = "yes";
-  },
-
+  { name = "#leiningen"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#clojure"; chatnet = "FreeNode"; autojoin = "yes"; },
-  { name = "#noir"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#compojure"; chatnet = "FreeNode"; autojoin = "yes"; },
   { name = "#korma"; chatnet = "FreeNode"; autojoin = "yes"; },
-  { name = "#leiningen"; chatnet = "FreeNode"; autojoin = "yes"; },
-
   { name = "#sicp"; chatnet = "FreeNode"; autojoin = "yes"; },
-
-  { name = "#vagrant"; chatnet = "FreeNode"; autojoin = "yes"; },
-
-  { name = "#gigpub"; chatnet = "FreeNode"; autojoin = "yes"; },
+  { name = "#4clojure"; chatnet = "FreeNode"; autojoin = "yes"; },
 );
 
 aliases = {
