@@ -29,3 +29,6 @@
 
 (require 'whitespace)
 (global-set-key (kbd "C-x w") 'whitespace-mode)
+
+(global-set-key [(shift delete)] 'clipboard-kill-ring-save)
+(global-set-key [(shift insert)] 'clipboard-yank)
