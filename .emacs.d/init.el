@@ -14,6 +14,7 @@
 
 (defvar my-packages '(undo-tree evil color-theme-solarized
                                 clojure-mode nrepl
+                                lua-mode
                                 markdown-mode
                                 magit))
 (dolist (p my-packages)
