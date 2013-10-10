@@ -13,6 +13,7 @@
   (package-refresh-contents))
 
 (defvar my-packages '(undo-tree evil color-theme-solarized
+                                auto-complete ac-nrepl
                                 paredit highlight-parentheses
                                 clojure-mode nrepl
                                 lua-mode
@@ -26,6 +27,14 @@
 
 (global-undo-tree-mode)
 (evil-mode 1)
+
+(require 'auto-complete)
+(global-auto-complete-mode t)
+(require 'ac-nrepl)
+(add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
+(add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
+(eval-after-load "auto-complete"
+  '(add-to-list 'ac-modes 'nrepl-mode))
 
 (load-theme 'solarized-light t)
 
