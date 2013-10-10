@@ -5,3 +5,4 @@
 *.un~
 .vim/.netrwhist
 *#
+.emacs.d/ac-comphist.dat
