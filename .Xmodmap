@@ -6,3 +6,16 @@ remove mod1 = Alt_L
 add mod1 = Super_L
 add mod1 = Super_R
 add mod4 = Alt_L
+
+remove Control = Control_R
+remove Mod1 = Alt_R
+keycode 105 = Alt_R
+keycode 108 = Control_R
+add Control = Control_R
+add Mod1 = Alt_R
+
+remove Lock = Caps_Lock
+keysym Escape = Caps_Lock
+keysym Caps_Lock = Escape
+add Lock = Caps_Lock
+!remove Lock = Escape
