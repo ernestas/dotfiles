@@ -17,6 +17,8 @@
                                 clojure-mode nrepl
                                 lua-mode
                                 markdown-mode
+                                css-mode
+                                less-css-mode
                                 magit))
 (dolist (p my-packages)
   (when (not (package-installed-p p))
