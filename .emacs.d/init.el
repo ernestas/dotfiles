@@ -36,6 +36,8 @@
 (eval-after-load "auto-complete"
   '(add-to-list 'ac-modes 'nrepl-mode))
 
+(add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
+
 (load-theme 'solarized-light t)
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
