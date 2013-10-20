@@ -12,10 +12,10 @@
 (when (null package-archive-contents)
   (package-refresh-contents))
 
-(defvar my-packages '(undo-tree evil color-theme-solarized
+(defvar my-packages '(undo-tree evil color-theme-solarized linum-relative
                                 auto-complete ac-nrepl
                                 paredit highlight-parentheses
-                                clojure-mode nrepl
+                                clojure-mode cider
                                 lua-mode
                                 markdown-mode
                                 css-mode
@@ -28,13 +28,19 @@
 (global-undo-tree-mode)
 (evil-mode 1)
 
+(require 'linum-relative)
+(global-linum-mode 1)
+
 (require 'auto-complete)
 (global-auto-complete-mode t)
 (require 'ac-nrepl)
-(add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
-(add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
+(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
+(add-hook 'cider-interaction-mode-hook 'ac-nrepl-setup)
 (eval-after-load "auto-complete"
-  '(add-to-list 'ac-modes 'nrepl-mode))
+  '(add-to-list 'ac-modes 'cider-mode))
+
+(setq cider-repl-popup-stacktraces t)
+(setq nrepl-popup-stacktraces-in-repl t)
 
 (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
 
@@ -42,8 +48,9 @@
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; Parentheses
 (add-hook 'clojure-mode-hook (lambda () (paredit-mode +1)))
-(add-hook 'nrepl-mode-hook (lambda () (paredit-mode +1)))
+(add-hook 'cider-repl-mode-hook (lambda () (paredit-mode +1)))
 (add-hook 'scheme-mode-hook (lambda () (paredit-mode +1)))
 (add-hook 'emacs-lisp-mode-hook (lambda () (paredit-mode +1)))
 (require 'highlight-parentheses)
@@ -55,5 +62,6 @@
 (require 'whitespace)
 (global-set-key (kbd "C-x w") 'whitespace-mode)
 
+;; Copy/paste
 (global-set-key [(shift delete)] 'clipboard-kill-ring-save)
 (global-set-key [(shift insert)] 'clipboard-yank)
