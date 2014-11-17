@@ -67,6 +67,15 @@
 (require 'whitespace)
 (global-set-key (kbd "C-x w") 'whitespace-mode)
 
+(defun cider-repl-reset ()
+  (interactive)
+  (save-some-buffers)
+  (with-current-buffer (cider-current-repl-buffer)
+    (goto-char (point-max))
+    (insert "(reset)")
+    (cider-repl-return)))
+(global-set-key (kbd "C-c r") 'cider-repl-reset)
+
 ;; Copy/paste
 (global-set-key [(shift delete)] 'clipboard-kill-ring-save)
 (global-set-key [(shift insert)] 'clipboard-yank)
