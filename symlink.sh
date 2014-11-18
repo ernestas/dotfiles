@@ -7,3 +7,4 @@ ln -s $PWD/.irssi ~/.irssi
 ln -s $PWD/.Xmodmap ~/.Xmodmap
 ln -s $PWD/.emacs.d/ ~/.emacs.d
 ln -s $PWD/.config/awesome/ ~/.config/awesome
+ln -s $PWD/.lein/ ~/.lein
