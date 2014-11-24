@@ -25,6 +25,7 @@
                                 markdown-mode
                                 css-mode
                                 less-css-mode
+                                puppet-mode
                                 magit))
 (dolist (p my-packages)
   (when (not (package-installed-p p))
